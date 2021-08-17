@@ -10,11 +10,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
-    app.get('*', function (req, res) {
-        res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-    });
-};
+
 
 
 
@@ -109,11 +105,15 @@ app.get("/code",async(req,res)=>
     res.send(result)
 })
 
-app.get('*', (req, res) => {
-    res.status(200).json({
-        msg: 'Catch All'
-    });
-});
+if(process.env.NODE_ENV=="production")
+{
+    app.use(express.static("client/build"));
+    const path=require("path");
+    app.get("*",(req,res)=>
+    {
+        res.sendFile(path.resolve(__dirname,'client','build','index.html'))
+    })
+}
 app.listen(port,()=>
 {
     console.log("success")

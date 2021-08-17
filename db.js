@@ -1,6 +1,6 @@
 const mongo=require("mongoose")
 
-mongo.connect(" mongodb://127.0.0.1:27017/ecommerce",{useNewUrlParser: true,useUnifiedTopology: true}).then(()=>console.log("success database")).catch((err)=>console.log(err))
+mongo.connect("mongodb://127.0.0.1:27017/ecommerce",{useNewUrlParser: true,useUnifiedTopology: true}).then(()=>console.log("success database")).catch((err)=>console.log(err))
 const mySchema=new mongo.Schema({
     id:Number,
     discount:Number,

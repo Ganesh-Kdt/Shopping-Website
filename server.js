@@ -1,5 +1,6 @@
 const express=require("express")
 const app=express()
+require('dotenv').config({path:"./config.env"});
 const {AppleData,Product,FeaturedProduct,Code}=require("./db")
 const cors=require("cors")
 const bodyParser=require("body-parser")
@@ -105,7 +106,13 @@ app.get("/code",async(req,res)=>
     res.send(result)
 })
 
-if(process.env.NODE_ENV=="production")
+/*app.delete("/code",async(req,res)=>
+{
+    const result=await Code.deleteMany({})
+    res.send(result)
+})*/
+
+if(process.env.NODE_ENV==="production")
 {
     app.use(express.static("client/build"));
     const path=require("path");

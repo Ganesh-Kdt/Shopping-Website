@@ -1,6 +1,6 @@
 const mongo=require("mongoose")
-
-mongo.connect("mongodb://127.0.0.1:27017/ecommerce",{useNewUrlParser: true,useUnifiedTopology: true}).then(()=>console.log("success database")).catch((err)=>console.log("not responding..."))
+const uri="mongodb+srv://gkudtarkar8:12345@mongodb.kkyhc.mongodb.net/ecommerce?retryWrites=true&w=majority"
+mongo.connect(uri,{useNewUrlParser: true,useUnifiedTopology: true}).then(()=>console.log("success database")).catch((err)=>console.log("not responding..."))
 const mySchema=new mongo.Schema({
     id:Number,
     discount:Number,

@@ -63,7 +63,7 @@ function Cart()
         console.log("useEffect1")
         async function getData()
         {
-            const result=await axios.get("http://localhost:3000/code")
+            const result=await axios.get("/code")
             const a=result.data
             console.log(a)
             setCodes(()=>

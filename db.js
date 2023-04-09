@@ -1,5 +1,5 @@
 const mongo=require("mongoose")
-const uri="mongodb+srv://gkudtarkar8:12345@mongodb.kkyhc.mongodb.net/ecommerce?retryWrites=true&w=majority"
+const uri="mongodb://localhost:27017/ecommerce"
 mongo.connect(uri,{useNewUrlParser: true,useUnifiedTopology: true}).then(()=>console.log("success database")).catch((err)=>console.log("not responding..."))
 const mySchema=new mongo.Schema({
     id:Number,

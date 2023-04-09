@@ -105,10 +105,10 @@ function NavBar()
                     </div>
                 </div>
             </div>
-            <div className="topics-nav">IPHONE</div>
-            <div className="topics-nav">IPAD</div>
-            <div className="topics-nav">MACBOOK</div>
-            <div className="topics-nav">ACCESSORIES</div>
+            <div className="topics-nav"><NavLink to="/app/AirPods & Wireless">IPHONE</NavLink></div>
+            <div className="topics-nav"><NavLink to="/app/Apple Care">IPAD</NavLink></div>
+            <div className="topics-nav"><NavLink to="/app/AirPods & Wireless">MACBOOK</NavLink></div>
+            <div className="topics-nav"><NavLink to="/app/Keyboards">ACCESSORIES</NavLink></div>
         </div>
         </>
     )

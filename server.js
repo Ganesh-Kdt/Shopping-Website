@@ -102,9 +102,9 @@ app.post("/code",async(req,res)=>
 
 app.get("/code",async(req,res)=>
 {
-    const result=await Code.find({})
+        const result=await Code.find({})
     res.send(result)
-})
+    })
 
 /*app.delete("/code",async(req,res)=>
 {

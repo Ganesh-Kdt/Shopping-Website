@@ -186,17 +186,17 @@ function Home(props)
             <div className="inside-shipping">
                 <div className="logo"><i className="fas fa-shipping-fast fa-3x"></i></div>
                 <div className="para">FREE SHIPPPING</div>
-                <div className="para-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </div>
+                <div className="para-content">You get unlimited FREE Two-Day Shipping on eligible items with iSHOP Prime, with no minimum spend.</div>
             </div>
             <div className="inside-shipping">
                 <div className="logo"><i className="fas fa-dollar-sign fa-3x"></i></div>
                 <div className="para">100% REFUND</div>
-                <div className="para-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </div>
+                <div className="para-content">Thinking of buying but worried you might need to cancel? Not a problem. Whatever your cancellation reason may be, now you can get 100% of your money back!</div>
             </div>
             <div className="inside-shipping">
                 <div className="logo"><i className="fas fa-headset fa-3x "></i></div>
                 <div className="para">SUPPORT 24/7</div>
-                <div className="para-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </div>
+                <div className="para-content">24/7 support means customers can get help and find answers to questions as soon as they come up—24/7 and in real-time.</div>
             </div>
         </div>
         <div className="featured-pro" style={{}}>FEATURED PRODUCTS</div>

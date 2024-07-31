@@ -12,7 +12,7 @@ function Footer()
         <div className="second-last">
             <div className="inside-second-last">
                 <div style={{fontSize:"2rem",fontWeight:"bold",padding:"10px 0px",color:"lightgray"}}>iSHOP</div>
-                <div style={{fontSize:"0.9rem"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div style={{fontSize:"0.9rem"}}>Shop millions of products, never miss amazing deals, compare prices and reviews and track your orders easily with iSHOP!</div>
             </div>
             <div className="inside-second-last">
                 <div style={{fontSize:"1.2rem",fontWeight:"bold",padding:"16px 0px"}}>Follow Us</div>
@@ -24,7 +24,7 @@ function Footer()
             </div>
             <div className="inside-second-last">
                 <div style={{fontSize:"1.2rem",fontWeight:"bold",padding:"14px 0px"}}>Contact Us</div>
-                <div style={{fontSize:"0.9rem"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div style={{fontSize:"0.9rem"}}>Let's Talk. Share your excitement with us! Our door is always open for a good cup of coffee.</div>
             </div>
         </div>
         <div className="last">
